@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+    body{
+        margin: 0;
+    }
+    nav{
+        display: flex;
+        padding: 5px 0;
+        width: 100%;
+    }
+    nav>.logo{
+        flex:none;
+    }
+    nav>.logo a{
+        text-decoration: none;
+        font-size: 20px;
+        color: #000;
+    }
+    nav>.yo{
+        flex: auto;
+    }
+    .manu{
+        display: none;
+    }
+    nav>.about{
+        flex: none;
+        display: flex;
+    }
+    nav>.about a{
+        flex: none;
+        text-decoration: none;
+        font-size: 20px;
+        color: #000;
+        padding: 0 6px;
+    }
+    .wrap {
+        font-size:20px;
+        margin: auto;
+        display: flex;
+        background-color: #C4E1FF;
+    }
+    .welcome{
+        width: 100%;
+        flex: auto;
+        height: 300px;
+        font-size: 2em;
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .myhome p {
+        color: #3D7878
+    }
+    main{
+        display: flex;
+        flex-wrap: wrap;
+        margin: auto;
+        justify-content: center;
+        align-items: center;
+    }
+    main>.item {
+        margin: 10px 10px 0px 10px;
+        background-color: #D2E9FF;
+    }
+    .item img{
+        width: 100%;
+        height: auto;
+    }
+    .item p{
+        text-align: center;
+        vertical-align: middle;
+    }
+
+    @media  (max-width:1200px) {
+        main>.item {
+            width: 45%;
+            }
+    }
+    @media  (max-width:600px){
+        main>.item {
+            width: 90%;
+            }
+        nav>.about{
+            display: none;
+        }
+        .manu{
+            display: flex;
+            justify-content: flex-end;
+        }
+        .manu img{
+            max-width:30px;
+        }
+    }
+    </style>
+</head>
+<body>
+    <nav>
+        <div class="logo">
+            <a href="#">作品介紹</a>
+        </div>
+        <div class="yo"></div>
+        <div class="manu">
+            <a href="#">
+                <img src="https://cdn4.iconfinder.com/data/icons/wirecons-free-vector-icons/12/menu-alt-256.png" alt="">
+            </a>
+        </div>
+        <div class="about">
+            <a href="#">關於我</a>
+            <a href="#">作品介紹</a>
+            <a href="#">聯絡方式</a>
+            <a href="#">網頁地圖</a>
+        </div>
+    </nav>
+    <div class="wrap">
+        <div class="welcome">
+            <div class="myhome">
+                <p>Welcome to my home</p>
+            </div>
+        </div>
+    </div>
+    <main>
+        <div class="item">
+            <img src="https://picsum.photos/270/200/?random1" alt="">
+            <p>title 1</p>
+        </div>
+        <div class="item">
+            <img src="https://picsum.photos/270/200/?random1" alt="">
+            <p>title 2</p>
+        </div>
+        <div class="item">
+            <img src="https://picsum.photos/270/200/?random1" alt="">
+            <p>title 3</p>
+        </div>
+        <div class="item">
+            <img src="https://picsum.photos/270/200/?random1" alt="">
+            <p>title 4</p>
+        </div>
+    </main>
+    <main>
+        <div class="item">
+            <img src="https://picsum.photos/270/200/?random1" alt="">
+            <p>title 5</p>
+        </div>
+        <div class="item">
+            <img src="https://picsum.photos/270/200/?random1" alt="">
+            <p>title 6</p>
+        </div>
+        <div class="item">
+            <img src="https://picsum.photos/270/200/?random1" alt="">
+            <p>title 7</p>
+        </div>
+        <div class="item">
+            <img src="https://picsum.photos/270/200/?random1" alt="">
+            <p>title 8</p>
+        </div>
+    </main>
+</body>
+</html>
