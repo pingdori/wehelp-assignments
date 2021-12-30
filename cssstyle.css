@@ -1,0 +1,100 @@
+    body{
+        margin: 0;
+    }
+    nav{
+        display: flex;
+        padding: 5px 0;
+        width: 100%;
+    }
+    nav>.logo{
+        flex:none;
+    }
+    nav>.logo a{
+        text-decoration: none;
+        font-size: 20px;
+        color: #000;
+    }
+    nav>.yo{
+        flex: auto;
+    }
+    #manu_btn{
+        display: block;
+    }
+        
+    #btn{
+        display: none;
+        
+    }
+    #burger{
+        position:absolute;
+        z-index: -2;
+    }
+    nav>ul a{
+        flex: none;
+        text-decoration: none;
+        font-size: 20px;
+        color: #000;
+        padding: 0 6px;
+    }
+    .wrap {
+        font-size:20px;
+        margin: auto;
+        display: flex;
+        background-color: #C4E1FF;
+    }
+    .welcome{
+        width: 100%;
+        flex: auto;
+        height: 300px;
+        font-size: 2em;
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .myhome p {
+        color: #3D7878
+    }
+    main{
+        display: flex;
+        flex-wrap: wrap;
+        margin: auto;
+        justify-content: center;
+        align-items: center;
+    }
+    main>.item {
+        margin: 10px 10px 0px 10px;
+        background-color: #D2E9FF;
+    }
+    .item img{
+        width: 100%;
+        height: auto;
+    }
+    .item p{
+        text-align: center;
+        vertical-align: middle;
+    }
+
+    @media  (max-width:1200px) {
+        main>.item {
+            width: 45%;
+            }
+    }
+    @media  (max-width:600px){
+        main>.item {
+            width: 90%;
+            }
+        
+        .manu #btn{
+            display: block;
+            width: 40px;
+            height: 40px;
+        }
+        #menu_btn{
+            display: block;
+        }
+        ul{
+            display: block;
+        }
+        
+    }
