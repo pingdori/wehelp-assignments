@@ -8,7 +8,8 @@ with open ("data.csv","w",encoding="utf-8")as file:
     for att in clist:
         attfile=att["file"]
         attfile_split=attfile.split("https")
+        addr=att["address"][5:8]
         attfile1=attfile_split
-        file.write(att["stitle"]+","+att["address"]+","+att["longitude"]+","+"https"+attfile1[1]+"\n")
+        file.write(att["stitle"]+","+addr+","+att["longitude"]+","+att["latitude"]+","+"https"+attfile1[1]+"\n")
             
     
