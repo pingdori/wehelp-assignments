@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>失敗頁面</title>
+    <style>
+        body{
+            margin: 0;
+        }
+        header{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            padding: 0 0;
+            width: 100%;
+            background-color: #faa;
+        }
+        header>p{
+            font-size: 30px;
+            color: #fff;
+            font-weight: bolder;
+        }
+        .sign_in{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        nav{
+            display: flex;
+            justify-content: center;
+            height: 70px;
+            margin-bottom: 20px;
+        }
+        nav>p{
+            font-size: 30px;
+            color: #faa;
+            font-weight: bolder;
+        }
+        /* .sign_in{
+            padding: 0;
+            margin: auto;
+            
+        }
+        .account_text{
+            font-size: 30px;
+            margin: 0;
+            
+        }
+        .password_text{
+            font-size: 30px;
+            margin: 10px 0;
+        }
+        input[type=text]{
+            width: 250px;
+            height: 30px;
+            vertical-align:text-top;
+            font-size: 20px;
+        }
+        .sign_in_button{
+            display: flex;
+            justify-content: center;
+        }
+        button{
+            font-size: 20px;
+            height: 50px;
+            width: 70px;
+        } */
+    </style>
+</head>
+<body>
+    <header> 
+        <p>
+            失敗頁面
+        </p>
+    </header>
+    <nav>
+        <p>{{data}}</p>
+        
+    </nav>
+    <!-- <div class="sign_in">
+        
+        <form action="/signin" method="post">
+            <p class="account_text">
+                帳號  <input type="text" name="account_content">
+            </p>
+            <p class="password_text">
+                密碼  <input type="text" name="password_content">
+            </p>
+            <div class="sign_in_button">
+                <button>登入</button>
+            </div>
+            
+        </form>
+    </div> -->
+    
+</body>
+</html>
