@@ -19,7 +19,8 @@
 
 - 使用 SELECT 指令取得 member 資料表中第 2 ~ 4 共三筆資料，並按照 time 欄位，
 由近到遠排序。( 並非編號 2、3、4 的資料，而是排序後的第 2 ~ 4 筆資料 )
-![](https://s3.us-west-2.amazonaws.com/secure.notion-static.com/cefc49ab-4def-46e8-8765-23a31f0958e6/Untitled.png?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Content-Sha256=UNSIGNED-PAYLOAD&X-Amz-Credential=AKIAT73L2G45EIPT3X45%2F20220126%2Fus-west-2%2Fs3%2Faws4_request&X-Amz-Date=20220126T074250Z&X-Amz-Expires=86400&X-Amz-Signature=5c86819f59366376ff9fe7888967e9fbb20a0f9e6661e54c31ab34dae1da7d53&X-Amz-SignedHeaders=host&response-content-disposition=filename%20%3D%22Untitled.png%22&x-id=GetObject)
+
+    ![](https://s3.us-west-2.amazonaws.com/secure.notion-static.com/cefc49ab-4def-46e8-8765-23a31f0958e6/Untitled.png?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Content-Sha256=UNSIGNED-PAYLOAD&X-Amz-Credential=AKIAT73L2G45EIPT3X45%2F20220126%2Fus-west-2%2Fs3%2Faws4_request&X-Amz-Date=20220126T074250Z&X-Amz-Expires=86400&X-Amz-Signature=5c86819f59366376ff9fe7888967e9fbb20a0f9e6661e54c31ab34dae1da7d53&X-Amz-SignedHeaders=host&response-content-disposition=filename%20%3D%22Untitled.png%22&x-id=GetObject)
 
 - 使用 SELECT 指令取得欄位 username 是 test 的會員資料。
 ![](https://s3.us-west-2.amazonaws.com/secure.notion-static.com/2661d729-ffc1-4580-b19f-41170da32aee/Untitled.png?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Content-Sha256=UNSIGNED-PAYLOAD&X-Amz-Credential=AKIAT73L2G45EIPT3X45%2F20220126%2Fus-west-2%2Fs3%2Faws4_request&X-Amz-Date=20220126T074829Z&X-Amz-Expires=86400&X-Amz-Signature=3f6b70ec342d7e6f398c2f41478331cb03de861fae21350e657adbcefd3a5372&X-Amz-SignedHeaders=host&response-content-disposition=filename%20%3D%22Untitled.png%22&x-id=GetObject)
