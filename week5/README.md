@@ -35,7 +35,8 @@
 ### 要求四：SQL Aggregate Functions
 利用要求二建立的資料庫和資料表，寫出能夠滿足以下要求的 SQL 指令：
 - 取得 member 資料表中，總共有幾筆資料 ( 幾位會員 )。
-![](https://s3.us-west-2.amazonaws.com/secure.notion-static.com/2d0485e0-dabd-4349-a2c0-39ef0a7e1cea/Untitled.png?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Content-Sha256=UNSIGNED-PAYLOAD&X-Amz-Credential=AKIAT73L2G45EIPT3X45%2F20220126%2Fus-west-2%2Fs3%2Faws4_request&X-Amz-Date=20220126T075634Z&X-Amz-Expires=86400&X-Amz-Signature=5393e99d8e5ae5ac8bf4c6fc67c3aedf2f96418eba317bc83574729da8662c3d&X-Amz-SignedHeaders=host&response-content-disposition=filename%20%3D%22Untitled.png%22&x-id=GetObject)
+    
+    ![](https://s3.us-west-2.amazonaws.com/secure.notion-static.com/2d0485e0-dabd-4349-a2c0-39ef0a7e1cea/Untitled.png?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Content-Sha256=UNSIGNED-PAYLOAD&X-Amz-Credential=AKIAT73L2G45EIPT3X45%2F20220126%2Fus-west-2%2Fs3%2Faws4_request&X-Amz-Date=20220126T075634Z&X-Amz-Expires=86400&X-Amz-Signature=5393e99d8e5ae5ac8bf4c6fc67c3aedf2f96418eba317bc83574729da8662c3d&X-Amz-SignedHeaders=host&response-content-disposition=filename%20%3D%22Untitled.png%22&x-id=GetObject)
 - 取得 member 資料表中，所有會員 follower_count 欄位的總和。
 ![](https://s3.us-west-2.amazonaws.com/secure.notion-static.com/53375e04-0ee4-4341-bcea-437bb502fe16/Untitled.png?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Content-Sha256=UNSIGNED-PAYLOAD&X-Amz-Credential=AKIAT73L2G45EIPT3X45%2F20220126%2Fus-west-2%2Fs3%2Faws4_request&X-Amz-Date=20220126T075701Z&X-Amz-Expires=86400&X-Amz-Signature=35dd35b6abb0bb1fac95cfd58659afeb6d04d8f1da471f7c2ebb622c70374e5d&X-Amz-SignedHeaders=host&response-content-disposition=filename%20%3D%22Untitled.png%22&x-id=GetObject)
 - 取得 member 資料表中，所有會員 follower_count 欄位的平均數。
