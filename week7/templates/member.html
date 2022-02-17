@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script >
+        async function getData(){
+            let submit=document.querySelector('[data-action="submit"]');
+            let name_value=form.elements.search_content.value;
+            let conn = await fetch("http://127.0.0.1:3000/api/members?username="+name_value);
+            let connData = await conn.json();
+            let content=document.getElementById("result");
+
+                if(connData.data==null){
+                    content.innerHTML="查無此人";
+                }else{
+                    let nameSplit=connData.data.name;
+                    let usernameSlipt=connData.data.username;
+                    content.innerHTML=nameSplit +"("+usernameSlipt+")";
+                }
+        }
+    </script> 
+
+    <title>會員頁面</title>
+    <style>
+        body{
+            margin: 0;
+        }
+        header{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            padding: 0 0;
+            width: 100%;
+            background-color: #faa;
+        }
+        header>p{
+            font-size: 30px;
+            color: #fff;
+            font-weight: bolder;
+        }
+        .sign_in{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        nav{
+            display: flex;
+            justify-content: center;
+            height: 70px;
+            margin-bottom: 20px;
+        }
+        nav>p{
+            font-size: 30px;
+            color: #faa;
+            font-weight: bolder;
+        }
+        .signout{
+            display: flex;
+            justify-content: center;
+        }
+        .signout a{
+            font-size: 20px;
+        }
+        .signout a{
+            font-size: 20px;
+        }
+        strong{
+            display: flex;
+            justify-content: center;
+            margin-top: 40px;
+            font-size: 30px;
+            color: #704214	;
+            font-weight: bolder;
+        }
+        .search{
+            padding: 0;
+            margin: auto;
+            
+        }
+        .search_text{
+            font-size: 30px;
+            margin: 0;
+            display: flex;
+            justify-content: center;
+        }
+        .form{
+            display: flex;
+            justify-content: center;
+
+        }
+        input[type=text]{
+            width: 250px;
+            height: 30px;
+            vertical-align:text-top;
+            font-size: 20px;
+        }
+        #contain{
+            display: flex;
+            justify-content: center;
+        }
+        #result{
+            margin-top: 10px;
+            font-size: 25px;
+            
+        }
+        input[type=button]{
+            font-size: 20px;
+            height: 35px;
+            width: 70px;
+            margin-left: 10px;
+        }
+        strong{
+            margin-bottom: 20px;
+            margin-top: 40px;
+        }
+    </style>
+</head>
+<body>
+    <header> 
+        <p>
+            歡迎光臨，這是會員頁
+        </p>
+    </header>
+    <nav>
+        <p>
+            {{username}}，歡迎登入系統
+        </p>
+        
+    </nav>
+    <div class="signout">
+        <a href="/signout">登出系統</a>
+    </div>
+    
+    </div>
+    <strong>查詢會員姓名 </strong> 
+    <div class="search">
+            <p class="search_text">
+                <form name="form" class="form">
+                    <input type="text" name="search_content" >
+                    <div name="get_data" onclick="getData();" method="get" >
+                        <input type="button"  value="查詢" data-action="submit" name="submit">
+                    </div>
+                </form>
+                <div id="contain">
+                    <div id="result"></div>
+                </div>
+            </p>
+                
+            </div>
+    </div>
+    
+</body>
+</html>
